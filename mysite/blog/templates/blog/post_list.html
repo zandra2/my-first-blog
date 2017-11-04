@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<!-- set this so that whoever view it can see it mobile/tablet/cp/etc -->
+    <meta name="viewport" content="with=device+with">
+    <meta name="description" content="Affortable and professional web design">
+    <meta name="keywords" content="web design, afforable web design, professional web design">
+    <meta name="author" content="Zandra Eng">
+    <title>Zandra Web Design | Welcome</title>
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <header>
+<!-- adding a container <div> so that the header will stay in center when screen are small -->
+      <div class="container">
+        <div id="branding">
+<!-- <span> will not make it go onto the next line -->
+<!-- if we wrap this on a <div> Zandra will go onto the next line -->
+          <h1><span class="highlight">Zandra</span> Web Design</h1>
+      </div>
+      <nav>
+<!-- ul is unordered list which we'll use for menu         -->
+        <ul>
+<!-- <li will be the home link and we need href to the page we want it to load
+and text for that is Home/About/Services-->
+          <li class="current"><a href="index.html">Home<a></li>
+          <li><a href="about.html">About<a></li>
+          <li><a href="services.html">Services<a></li>
+        </ul>
+      </nav>
+    </header>
+<!-- make sure we go outside the header to add <section> -->
+    <section id="showcase">
+      <div class="container">
+        <h1>Affordable Professional Web Design</h1>
+        <p id="showcase2">This is my second webpage design. I hope you'll like it.</p>
+      </div>
+    </section>
+
+    <section id="newsletter">
+      <div class="container">
+        <h1>Subscribe To Our Newsletter</h1>
+<!-- We're not making <form> go anyhere, but normally you would put <form action="process.php"> -->
+<!-- or whatever server-side language you use. -->
+        <form>
+<!-- We could use text, but html5 has really nice types and email is one of them. We could also put placeholder -->
+<!-- which gives it basically some text if there's nothing in the <form> so we're just going to say "enter email" -->
+<!-- html5 we don't have to close <input> off with />, but xhtml we need to use /> to end it -->
+            <input type="email" placeholder="Enter Email...">
+<!-- adding <button> so when we submit it will give us the form -->
+            <button type="submit" class="button_1">Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="boxes">
+      <div class="container">
+
+        <div class="box">
+          <img src="./a_image/html5.gif">
+          <h3>HTML5 Markup</h3>
+          <p>This is HTML5 markup. I just made it up to make it look pretty</p>
+        </div>
+
+        <div class="box">
+          <img src="./a_image/colorpicker.png">
+          <h3>CSS3 Design</h3>
+          <p>This is a color septrem of what CSS3 can do. I made up the icon</p>
+        </div>
+
+        <div class="box">
+          <img src="./a_image/w3cert.gif">
+          <h3>Graphic Design</h3>
+          <p>Design school w3school. To learn more about html5 visit w3schools certified</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+<!-- to do a Copyright © Symbol: ALT + Fn + 0169 -->
+      <p>Zandra Web Design. Copyright &copy; 2017</p>
+    </footer>
+  </body>
+</html>
